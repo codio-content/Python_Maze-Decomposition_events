@@ -37,7 +37,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/play-sound.js",
+     "path": "public/py/play-sound.py",
      "panel": 0,
      "action": "open"
     },
@@ -61,7 +61,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/collision-event.js",
+     "path": "public/py/collision-event.py",
      "panel": 0,
      "action": "open"
     },
@@ -85,7 +85,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/collision-events.js",
+     "path": "public/py/collision-events.py",
      "panel": 0,
      "action": "open"
     },
@@ -109,7 +109,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/step-taken.js",
+     "path": "public/py/step-taken.py",
      "panel": 0,
      "action": "open"
     },
@@ -141,7 +141,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/game-started.js",
+     "path": "public/py/game-started.py",
      "panel": 0,
      "action": "open"
     },
@@ -165,7 +165,7 @@
      "action": "close"
     },
     {
-     "path": "public/js/diy.js",
+     "path": "public/py/diy.py",
      "panel": 0,
      "action": "open"
     },
@@ -192,7 +192,9 @@
  "theme": "paper",
  "scripts": [
   "https://code.jquery.com/jquery-2.1.4.min.js",
+  "https://mazegame.codio.com/skulpt.min.js",
   "https://mazegame.codio.com/game.js",
+  "https://mazegame.codio.com/game.python.js",
   ".guides/test_static.js"
  ]
 }

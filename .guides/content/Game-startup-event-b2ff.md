@@ -13,10 +13,10 @@ Go ahead and play the game. Observe how the player energy changes as does the nu
 
 Feel free to change the code. Try changing things like this
 
-```javascript
+```python
 energy = energy - 2
 ```
 or
-```javascript
-energy = energy - 0.5
+```python
+energy = energy - 5
 ```

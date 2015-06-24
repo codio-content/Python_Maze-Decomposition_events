@@ -23,26 +23,24 @@ When you're done, press the button below.
 |||guidance
 
 ## Solution
-```javascript
-function hitWallEvent() {
+```python
+
+def hitWallEvent():
   showMessage('Hit wall')
   playSound('bump')
-}
 
-function hitEnergyEvent() {
-  playSound('energy')
+def hitEnergyEvent():
   showMessage('Hit energy')
-}
+  playSound('energy')
 
-function hitMonsterEvent() {
+def hitMonsterEvent():
   showMessage('Hit monster')
   playSound('fight')
-}
 
-function goalReachedEvent() {
+def goalReachedEvent():
   showMessage('Reached goal')
   playSound('goal-reached')
-}
+
 ```
 
 |||

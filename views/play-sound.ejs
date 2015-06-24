@@ -13,12 +13,13 @@
       }           
               
       document.addEventListener('DOMContentLoaded', function() { 
+        importPythonGame();
         
         // Set up game
         createEmptyMaze() 
         
         // Load the user script file
-        loadUserScript('/js/play-sound.js')
+        loadUserScript('/py/play-sound.py')
         
       })    
     </script>

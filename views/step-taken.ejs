@@ -8,14 +8,23 @@
     <script>   
       
       function userScriptLoaded() {          
+        var turnTaken = module.tp$getattr('turnTaken');
+
         createRandomMaze(16,8)            
-        endOfTurn (turnTaken)
+
+        endOfTurn (function () {
+          if(turnTaken) {
+            Sk.misceval.callsim(turnTaken);
+          }
+          return true
+        })
       }
               
       document.addEventListener('DOMContentLoaded', function() {
+        importPythonGame();
         
         // Load the user script file
-        loadUserScript('/js/step-taken.js')
+        loadUserScript('/py/step-taken.py')
         
       })    
     </script>

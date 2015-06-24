@@ -10,10 +10,10 @@ In this simple case, we want to
 
 Look at the code on the left. Please don't worry about this wrapper around the code...
 
-```javascript
-function collisionEvent() {
+```python
+def collisionEvent():
+  playSound('bump')
 
-}
 ```
 
 It looks nasty, but it will soon make perfect sense. Just read the `collisionEvent()` bit and think "this is the bit of code that runs when there is a collision".

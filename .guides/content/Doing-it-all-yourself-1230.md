@@ -23,36 +23,34 @@ $$
 |||guidance
 
 ## Solution
-```javascript
-function initGame() {
-  score = 25
-  energy = 20  
-}
+```python
 
-function turnTaken() {
-  // scoring is done in here  
-  score = energy * 6 / steps
-  energy = energy - 1
-}
+def initGame():
+  setScore(25)
+  setEnergy(20)
 
-function hitWallEvent() {
+def turnTaken():
+  energy = getEnergy() - 1
+  setEnergy(energy)
+  score = getEnergy() * 6 / getSteps()
+  setScore(score)
+
+def hitWallEvent():
   playSound('bump')
-}
 
-function hitEnergyEvent() {
+def hitEnergyEvent():
+  energy = getEnergy() + 5
+  setEnergy(energy)
   playSound('energy')
-  energy = energy + 5
-}
 
-function hitMonsterEvent() {
+def hitMonsterEvent():
+  energy = getEnergy() - 3
+  setEnergy(energy)
   playSound('fight')
-  energy = energy - 3
-}
 
-function goalReachedEvent() {
+def goalReachedEvent():
   playSound('goal-reached')
-  showMessage('Reached goal!')
-}
+  
 ```
 
 |||

@@ -8,22 +8,60 @@
     <script>   
       
       function userScriptLoaded() { 
-        playerHitEnergy(function(object) {
-          hitEnergyEvent();
-          removeObject(object);
-        });     
-        playerHitWall(hitWallEvent);
-        playerHitMonster(hitMonsterEvent);
-        playerHitGoal(goalReachedEvent)
-        endOfTurn (turnTaken)
-        gameStarted(initGame)
+        
+        var initGame = module.tp$getattr('initGame');
+        var turnTaken = module.tp$getattr('turnTaken');
+        
+        var hitEnergyEvent = module.tp$getattr('hitEnergyEvent');
+        var hitWallEvent = module.tp$getattr('hitWallEvent');
+        var hitMonsterEvent = module.tp$getattr('hitMonsterEvent');
+        var goalReachedEvent = module.tp$getattr('goalReachedEvent');
+                
+        if(initGame) {
+          gameStarted(function () {
+            Sk.misceval.callsim(initGame);
+          });                
+        }
+        
+        if(turnTaken) {
+          endOfTurn(function () {
+            Sk.misceval.callsim(turnTaken);
+          })
+        }
+
+        if(hitEnergyEvent) {
+          playerHitEnergy(function(object) {
+            Sk.misceval.callsim(hitEnergyEvent);
+            removeObject(object);
+          });
+        }
+        
+        if(hitWallEvent) {
+          playerHitWall(function() {
+            Sk.misceval.callsim(hitWallEvent);
+          });
+        }
+        
+        if(hitMonsterEvent) {
+          playerHitMonster(function() {
+            Sk.misceval.callsim(hitMonsterEvent);
+          });
+        }
+        
+        if(goalReachedEvent) {
+          playerHitGoal(function() {
+            Sk.misceval.callsim(goalReachedEvent);
+          })
+        }
+        
         createRandomMaze(16,8)           
       }       
 
       document.addEventListener('DOMContentLoaded', function() {
+        importPythonGame();
         
         // Load the user script file
-        loadUserScript('/js/diy.js')
+        loadUserScript('/py/diy.py')
         
       })    
     </script>

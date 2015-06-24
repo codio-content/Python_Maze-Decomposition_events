@@ -2,9 +2,9 @@ We are now going to move onto another practical application of variables and fun
 
 The game can handle the display of the following information
 
-- **Steps** the number of moves your player has made
-- **Energy** the amount of energy your player has
-- **Score** the total score
+- **Steps** the number of moves your player has made, calling `getSteps()` returns the steps.
+- **Energy** the amount of energy your player has, calling `getEnergy()` returns the energy and calling `setEnergy(value)` sets the energy
+- **Score** the total score, calling `getScore()` returns the score and calling `setScore(value)` sets the score.
 
 ## Rules of the game
 

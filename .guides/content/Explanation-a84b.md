@@ -1,8 +1,17 @@
 Let's look at the code line by line and see how we do the scoring.
 
+## Energy decrease
+```python
+  energy = getEnergy() - 1
+  setEnergy(energy)
+```
+
+After each step taken, we reduce the amount of energy a player has by 1.
+
 ## Calculate score
-```javascript
-score = energy*5  / steps
+```python
+  score = getEnergy() * 5 / getSteps()
+  setScore(score)
 ```
 
 Here, we calculate the score based upon the following simple formula
@@ -10,11 +19,3 @@ Here, we calculate the score based upon the following simple formula
 $$
 score = \dfrac{energy \times 5}{steps}
 $$
-
-## Energy decrease
-```javascript
-energy = energy - 1
-```
-
-After each step taken, we reduce the amount of energy a player has by 1.
-

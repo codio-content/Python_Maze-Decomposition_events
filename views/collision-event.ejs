@@ -10,22 +10,25 @@
       
       // Once user script is loaded, do whatever else needs to be done
       function userScriptLoaded() {
+        
+        var collisionEvent = module.tp$getattr('collisionEvent');
+  
         playerHitObject (function () {
-          collisionEvent()
+          if(collisionEvent) {
+            Sk.misceval.callsim(collisionEvent);
+          }
           return true
         });
         playerStepTaken (function () {})
       }        
       
       document.addEventListener('DOMContentLoaded', function() {
-      
+        importPythonGame();
+        
         createRandomMaze(16, 8)
-
         
         // Load the user script file
-        loadUserScript('/js/collision-event.js')        
-        
-      
+        loadUserScript('/py/collision-event.py')              
       })
             
     </script>

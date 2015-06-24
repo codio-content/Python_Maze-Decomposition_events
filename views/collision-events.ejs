@@ -9,22 +9,48 @@
       
       // Once user script is loaded, do whatever else needs to be done
       function userScriptLoaded() {     
-        //gameStarted(initGame)
-        playerHitEnergy(function(object) {
-          hitEnergyEvent();
-          removeObject(object);
-        });     
-        playerHitWall(hitWallEvent);
-        playerHitMonster(hitMonsterEvent);
-        playerHitGoal(goalReachedEvent)
-        createRandomMaze(16,8)           
+
+        var hitEnergyEvent = module.tp$getattr('hitEnergyEvent');
+        var hitWallEvent = module.tp$getattr('hitWallEvent');
+        var hitMonsterEvent = module.tp$getattr('hitMonsterEvent');
+        var goalReachedEvent = module.tp$getattr('goalReachedEvent');
+        
+        if(hitEnergyEvent) {
+          playerHitEnergy(function(object) {
+            Sk.misceval.callsim(hitEnergyEvent);
+            removeObject(object);
+          });
+        }
+        
+        if(hitWallEvent) {
+          playerHitWall(function() {
+            Sk.misceval.callsim(hitWallEvent);
+          });
+        }
+        
+        if(hitMonsterEvent) {
+          playerHitMonster(function() {
+            Sk.misceval.callsim(hitMonsterEvent);
+          });
+        }
+        
+        if(goalReachedEvent) {
+          playerHitGoal(function() {
+            Sk.misceval.callsim(goalReachedEvent);
+          })
+        }
+
         playerStepTaken (function () {})           
+        
+        createRandomMaze(16,8)           
+        
       }      
       
       document.addEventListener('DOMContentLoaded', function() {
+        importPythonGame();
 
         // Load the user script file
-        loadUserScript('/js/collision-events.js')        
+        loadUserScript('/py/collision-events.py')        
         
       })
 

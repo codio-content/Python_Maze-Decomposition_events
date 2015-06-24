@@ -7,17 +7,31 @@
  
     <script>      
 
-      function userScriptLoaded() {           
-        gameStarted(initGame)        
-        endOfTurn (turnTaken)
+      function userScriptLoaded() {
+      
+        var initGame = module.tp$getattr('initGame');
+        var turnTaken = module.tp$getattr('turnTaken');
+        
+        if(initGame) {
+          gameStarted(function () {
+            Sk.misceval.callsim(initGame);
+          });                
+        }
+        
+        if(turnTaken) {
+          endOfTurn(function () {
+            Sk.misceval.callsim(turnTaken);
+          })
+        }
+        
         createRandomMaze(16,8)   
       }     
       
       document.addEventListener('DOMContentLoaded', function() { 
-        
+        importPythonGame();        
         
         // Load the user script file
-        loadUserScript('/js/game-started.js')
+        loadUserScript('/py/game-started.py')
         
       })    
     </script>
