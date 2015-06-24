@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One</title>
+    
+    <% include include/game.ejs %>    
+ 
+    <script>   
+      
+      function userScriptLoaded() { 
+        playerHitEnergy(function(object) {
+          hitEnergyEvent();
+          removeObject(object);
+        });     
+        playerHitWall(hitWallEvent);
+        playerHitMonster(hitMonsterEvent);
+        playerHitGoal(goalReachedEvent)
+        endOfTurn (turnTaken)
+        gameStarted(initGame)
+        createRandomMaze(16,8)           
+      }       
+
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        // Load the user script file
+        loadUserScript('/js/diy.js')
+        
+      })    
+    </script>
+    
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>

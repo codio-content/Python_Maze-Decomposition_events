@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>One</title>
+    
+    <% include include/game.ejs %>    
+ 
+    <script>      
+ 
+      
+      function userScriptLoaded() {
+
+      }           
+              
+      document.addEventListener('DOMContentLoaded', function() { 
+        
+        // Set up game
+        createEmptyMaze() 
+        
+        // Load the user script file
+        loadUserScript('/js/play-sound.js')
+        
+      })    
+    </script>
+    
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>

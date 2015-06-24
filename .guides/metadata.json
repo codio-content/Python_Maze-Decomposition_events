@@ -1,0 +1,198 @@
+{
+ "sections": [
+  {
+   "id": "fbc67c4-328c-1cb4-9b40-3d652a1cd0ec",
+   "title": "Events",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Events-fbc6.md"
+  },
+  {
+   "id": "58fda430-c51b-40c5-e8e0-621195f1bcd",
+   "title": "What is an Event",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-an-Event-58fd.md"
+  },
+  {
+   "id": "9d6da1d1-d91d-64fa-fb27-b08995f6e445",
+   "title": "Play a sound",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/play-sound.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/play-sound",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Play-a-sound-9d6d.md"
+  },
+  {
+   "id": "9171868f-1375-7f4b-3994-589d114d9577",
+   "title": "Collision Detection",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/collision-event.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/collision-event",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Collision-Detection-9171.md"
+  },
+  {
+   "id": "5ad3df1a-1228-fa91-554c-b3978c59d5a6",
+   "title": "Object Specific Collisions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/collision-events.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/collision-events",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Object-Specific-Collisions-5ad3.md"
+  },
+  {
+   "id": "733c2e3-6f3e-c16f-964c-91dfd12bca9b",
+   "title": "Scoring",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/step-taken.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/step-taken",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Scoring-733c.md"
+  },
+  {
+   "id": "a84bdc7-f866-d409-d634-7cad1b447185",
+   "title": "Explanation",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Explanation-a84b.md"
+  },
+  {
+   "id": "b2ffa4cc-c8e6-642a-bd51-9a5caf9d8ded",
+   "title": "Game startup event",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/game-started.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/game-started",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Game-startup-event-b2ff.md"
+  },
+  {
+   "id": "1230f68c-3d28-7b04-48b-1792dfcf0c4",
+   "title": "Doing it all yourself",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "public/js/diy.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain9500}}/diy",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Doing-it-all-yourself-1230.md"
+  },
+  {
+   "id": "343cfc42-7eba-9552-b819-19d2b6e26836",
+   "title": "All done",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/All-done-343c.md"
+  }
+ ],
+ "theme": "paper",
+ "scripts": [
+  "https://code.jquery.com/jquery-2.1.4.min.js",
+  "https://mazegame.codio.com/game.js",
+  ".guides/test_static.js"
+ ]
+}
