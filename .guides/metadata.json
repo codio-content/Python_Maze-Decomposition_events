@@ -12,7 +12,9 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Events-fbc6.md"
+   "content-file": ".guides/content/Events-fbc6.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "58fda430-c51b-40c5-e8e0-621195f1bcd",
@@ -26,7 +28,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/What-is-an-Event-58fd.md"
+   "content-file": ".guides/content/What-is-an-Event-58fd.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "9d6da1d1-d91d-64fa-fb27-b08995f6e445",
@@ -50,7 +54,9 @@
    "layout": "3-cell",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Play-a-sound-9d6d.md"
+   "content-file": ".guides/content/Play-a-sound-9d6d.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "9171868f-1375-7f4b-3994-589d114d9577",
@@ -74,7 +80,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Collision-Detection-9171.md"
+   "content-file": ".guides/content/Collision-Detection-9171.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "5ad3df1a-1228-fa91-554c-b3978c59d5a6",
@@ -98,7 +106,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Object-Specific-Collisions-5ad3.md"
+   "content-file": ".guides/content/Object-Specific-Collisions-5ad3.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "733c2e3-6f3e-c16f-964c-91dfd12bca9b",
@@ -122,7 +132,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Scoring-733c.md"
+   "content-file": ".guides/content/Scoring-733c.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "a84bdc7-f866-d409-d634-7cad1b447185",
@@ -130,7 +142,9 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Explanation-a84b.md"
+   "content-file": ".guides/content/Explanation-a84b.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "b2ffa4cc-c8e6-642a-bd51-9a5caf9d8ded",
@@ -154,7 +168,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Game-startup-event-b2ff.md"
+   "content-file": ".guides/content/Game-startup-event-b2ff.md",
+   "chapter": true,
+   "reset": []
   },
   {
    "id": "1230f68c-3d28-7b04-48b-1792dfcf0c4",
@@ -178,7 +194,9 @@
    "layout": "",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Doing-it-all-yourself-1230.md"
+   "content-file": ".guides/content/Doing-it-all-yourself-1230.md",
+   "chapter": false,
+   "reset": []
   },
   {
    "id": "343cfc42-7eba-9552-b819-19d2b6e26836",
@@ -186,15 +204,12 @@
    "files": [],
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/All-done-343c.md"
+   "content-file": ".guides/content/All-done-343c.md",
+   "chapter": false,
+   "reset": []
   }
  ],
- "theme": "paper",
- "scripts": [
-  "https://code.jquery.com/jquery-2.1.4.min.js",
-  "https://mazegame.codio.com/skulpt.min.js",
-  "https://mazegame.codio.com/game.js",
-  "https://mazegame.codio.com/game.python.js",
-  ".guides/test_static.js"
- ]
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": ""
 }

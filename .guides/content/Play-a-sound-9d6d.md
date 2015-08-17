@@ -12,6 +12,4 @@ Play with the code to experiment with these sounds.
 - Change the `playSound()` function as described above
 - Try adding more than one sound
 
-
 We'll use `playSound()` in the context of our game in a moment.
-

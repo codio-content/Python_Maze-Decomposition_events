@@ -16,5 +16,3 @@ Let's give you some examples in our game
 - When a key is pressed, move the player
 - When the player in the game collides with another object in the game, update the score or change energy levels
 - When the mouse button is clicked show some information
-
-
