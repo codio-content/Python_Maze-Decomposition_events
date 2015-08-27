@@ -1,15 +1,13 @@
+
 def hitWallEvent():
   showMessage('Hit wall')
   playSound('bump')
 
 def hitEnergyEvent():
-  showMessage('Hit energy')
-  playSound('energy')
+  showMessage('...')
 
 def hitMonsterEvent():
-  showMessage('Hit monster')
-  playSound('fight')
+  showMessage('...')
 
 def goalReachedEvent():
-  showMessage('Reached goal')
-  playSound('goal-reached')
+  showMessage('...')

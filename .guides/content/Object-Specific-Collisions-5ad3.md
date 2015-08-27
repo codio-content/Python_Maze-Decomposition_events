@@ -10,19 +10,19 @@ We can also play different sounds depending on which object is collided with.
 ```python
 
 def hitWallEvent():
-  showMessage('Hit wall')
+  showMessage('hit wall')
   playSound('bump')
 
 def hitEnergyEvent():
-  showMessage('Hit energy')
+  showMessage('hit energy')
   playSound('energy')
 
 def hitMonsterEvent():
-  showMessage('Hit monster')
+  showMessage('hit monster')
   playSound('fight')
 
 def goalReachedEvent():
-  showMessage('Reached goal')
+  showMessage('reached goal')
   playSound('goal-reached')
 
 ```
