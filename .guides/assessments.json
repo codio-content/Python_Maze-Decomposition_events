@@ -1,0 +1,34 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-1566375114",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "Handling collision events",
+   "instructions": "Look at the code on the left hand side. We have provided 4 different event handlers. One for each type of collision.\n\n1. Play the `bump` sound for a collision with a wall (we've done this one for you).\n1. Play the `energy` sound for a collision with an energy store.\n1. Play the `fight` sound for a collision with a monster.\n1. Play the `goal-reached` sound when you reach the exit.\n1. Show a message for each collision as well saying simply 'hit wall', 'hit energy' and 'hit monster'.\n1. Show a message saying 'Reached Goal' when you reach the exit.\n\nMake sure you play then game and hit all the entity types and also reach the exit.\n\nWhen you're done, press the button below.",
+   "command": "python /home/codio/workspace/.guides/tests/collision-events.py",
+   "points": 1
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2018812658",
+  "source": {
+   "showName": false,
+   "answers": [],
+   "tokens": {
+    "blank": [],
+    "text": []
+   },
+   "name": "DIY",
+   "instructions": "Complete the code on the left so \n\n1. When the games starts, set the initial score to 25 and the player energy to 20.\n1. Set the sounds (bump, energy, fight and goal-reached) for each corresponding event. As a reminder, the available sounds are `bump`, `energy`, `fight` and `goal-reached`. \n1. When a monster touches you, you should subtract 3 from the energy.\n1. When you hit the energy store, you should add 5 to your energy.\n1. Each time you take a turn, you subtract 1 from your energy.\n1. When the exit has been reached, you should display a message using the  `showMessage()` function.\n1. You calculate and display the score using the formula \n\n$$\nscore = \\dfrac{energy \\times 6}{steps}\n$$",
+   "command": "python /home/codio/workspace/.guides/tests/diy.py",
+   "points": 1
+  }
+ }
+]
