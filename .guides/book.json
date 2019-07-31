@@ -1,0 +1,71 @@
+{
+ "name": "Python_Maze-Decomposition_events",
+ "children": [
+  {
+   "title": "Events",
+   "id": "fbc67c4-328c-1cb4-9b40-3d652a1cd0ec",
+   "pageId": "fbc67c4-328c-1cb4-9b40-3d652a1cd0ec",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "What is an Event",
+     "id": "58fda430-c51b-40c5-e8e0-621195f1bcd",
+     "pageId": "58fda430-c51b-40c5-e8e0-621195f1bcd",
+     "type": "page"
+    },
+    {
+     "title": "Play a sound",
+     "id": "9d6da1d1-d91d-64fa-fb27-b08995f6e445",
+     "pageId": "9d6da1d1-d91d-64fa-fb27-b08995f6e445",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Collision Detection",
+   "id": "9171868f-1375-7f4b-3994-589d114d9577",
+   "pageId": "9171868f-1375-7f4b-3994-589d114d9577",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Object Specific Collisions",
+     "id": "5ad3df1a-1228-fa91-554c-b3978c59d5a6",
+     "pageId": "5ad3df1a-1228-fa91-554c-b3978c59d5a6",
+     "type": "page"
+    },
+    {
+     "title": "Scoring",
+     "id": "733c2e3-6f3e-c16f-964c-91dfd12bca9b",
+     "pageId": "733c2e3-6f3e-c16f-964c-91dfd12bca9b",
+     "type": "page"
+    },
+    {
+     "title": "Explanation",
+     "id": "a84bdc7-f866-d409-d634-7cad1b447185",
+     "pageId": "a84bdc7-f866-d409-d634-7cad1b447185",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Game startup event",
+   "id": "b2ffa4cc-c8e6-642a-bd51-9a5caf9d8ded",
+   "pageId": "b2ffa4cc-c8e6-642a-bd51-9a5caf9d8ded",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Doing it all yourself",
+     "id": "1230f68c-3d28-7b04-48b-1792dfcf0c4",
+     "pageId": "1230f68c-3d28-7b04-48b-1792dfcf0c4",
+     "type": "page"
+    },
+    {
+     "title": "All done",
+     "id": "343cfc42-7eba-9552-b819-19d2b6e26836",
+     "pageId": "343cfc42-7eba-9552-b819-19d2b6e26836",
+     "type": "page"
+    }
+   ]
+  }
+ ]
+}
